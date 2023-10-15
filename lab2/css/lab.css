@@ -1,6 +1,33 @@
 /* Here we can set styles for this lab page that we don't want to effect others pages */
 
 /* the period in a CSS selector selects an element by class, e.g., class="minor-section" */
+h1{
+  font-size: 100px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: #5d909f;
+  text-align: center;
+  background-color: rgb(210, 233, 253);
+}
+body{
+  padding-left: 10px;
+  padding-right: 10px;
+  border: 30px;
+  border-color: #5d909f;
+  background-color: #ffbd8e;
+  font-size: 35px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color:#ec8f33
+}
+img{
+  width: 500px;
+}
+
+
+
+
+
+
+
 .minor-section {
     padding: 10px;
     margin-bottom: 10px;

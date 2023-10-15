@@ -1,8 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <link rel="stylesheet" type="text/css" href="css/lab.css">
     <head></head>
     <body>
+        <div class= "header"></div>
         <h1>Hello world</h1>
-        <p>We are Teia and Leilah and we are super cool and awesome art majors. niether of us have coding experience </p>
-    <body>
+        <div class="body"></div>
+        <p>My name is Teia and my partner's name is Leilah. We are super cool and awesome art majors. 
+            <br />Niether of us have coding experience but are going to do our darndest to make this the coolest site ever. 
+            <br />We are both traditional artists but Leilah likes to paint and I like to draw.   </p>
+        <img id="sunglasses" src="img/sunglasses.jpg">
+        <img id="catgif" src="img/pbcat.gif">
+        <body>
