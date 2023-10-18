@@ -4,7 +4,7 @@
 
 /* we can select an html element tag, in this case "body" will apply to the whole document */
 body {
-  background-color: #50808E;
+  background-color: #feb464;
 }
 
 /* we can have rules apply to multiple elements at the same time with commas */
@@ -33,4 +33,11 @@ h1 {
   margin-bottom: 10px;
   border: solid 1px #888;
   background-color: #A3C9A8;
+}
+.lab-links {
+  padding: 10px;
+  border:dotted 4px #888
+}
+#my-portrait {
+  width: 300px;
 }
