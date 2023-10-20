@@ -13,3 +13,6 @@
         <img id="sunglasses" src="img/sunglasses.jpg">
         <img id="catgif" src="img/pbcat.gif">
         <body>
+        <div class="links">
+            <a href="index.html">homepage</a>
+        </div>
