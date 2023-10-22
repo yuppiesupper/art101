@@ -1,6 +1,6 @@
-// index.js - purpose and description here
-// Author: Your Name
-// Date:
+// index.js - Pseudocoding
+// Author: Teia Ziegelman
+// Date: 10/20/23
 
 // Constants
 
