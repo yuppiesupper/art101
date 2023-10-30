@@ -22,10 +22,6 @@ document.writeln("My Main Ride: <pre>",
 
 
 
-
-
-
-
 // this is an example function and this comment tells what it doees and what parameters are passed to it.
 function myFunction(param1, param2) {
   // some code here
