@@ -12,3 +12,5 @@ function add2(x){
 }
 // Print function:
 document.writeln(add2(myArray))
+console.log(myArray)
+console.log(add2())
