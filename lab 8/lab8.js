@@ -14,3 +14,32 @@ function add2(x){
 document.writeln(add2(myArray))
 console.log(myArray)
 console.log(add2())
+
+
+// try out wes's code?
+function firstThing(test) {
+    console.log(test + "one")
+}
+
+function secondThing(test) {
+    console.log(test + "two")
+}
+
+function thirdThing(test) {
+    console.log(test + "three!")
+}
+
+firstThing("TEST 1");
+secondThing("TEST 2");
+thirdThing("TEST 3");
+
+// one two three popping up after eachother?
+setTimeout(function() {
+    firstThing("one?");
+}, 0);
+setTimeout(function() {
+    secondThing("two?");
+}, 2000);
+setTimeout(function() {
+    thirdThing("three?");
+}, 4000);
