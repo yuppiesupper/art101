@@ -10,11 +10,6 @@ function add2(x){
     var results = (x + 2)
     return results;
 }
-// Print function:
-document.writeln(add2(myArray))
-console.log(myArray)
-console.log(add2())
-
 
 // try out wes's code?
 function firstThing(test) {
@@ -29,9 +24,9 @@ function thirdThing(test) {
     console.log(test + "three!")
 }
 
-firstThing("TEST 1");
-secondThing("TEST 2");
-thirdThing("TEST 3");
+firstThing("TEST 1: ");
+secondThing("TEST 2: ");
+thirdThing("TEST 3: ");
 
 // one two three popping up after eachother?
 setTimeout(function() {
@@ -39,7 +34,7 @@ setTimeout(function() {
 }, 0);
 setTimeout(function() {
     secondThing("two?");
-}, 2000);
+}, 4000);
 setTimeout(function() {
     thirdThing("three?");
-}, 4000);
+}, 6000);
