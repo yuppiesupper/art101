@@ -15,11 +15,17 @@ function myButton() {
     $("#output").html("boo!")
 };
 
+
 $("#dosmth").click(myButton);
 
+$("#dosmth").click(function(){
+    $("#output").toggleClass("special");
+    $("#output").html("boo!")
+})
+                      
 //button 2
 function myButton2() {
-    $("#output").html("you're safe")
+    $("#output").html("you're safe.... for now >;)")
 };
 
 $("#dosmthelse").click(myButton2)

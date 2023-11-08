@@ -17,6 +17,7 @@ h1 {
   letter-spacing: 5px;
   word-spacing: 5px;
   font-size: 200%;
+  font-style: italic;
   font-family:'Times New Roman', Times, serif
 }
 
@@ -32,7 +33,7 @@ h1 {
 .minor-section {
   padding: 10px;
   margin-bottom: 10px;
-  border: dotted 1px #888;
+  border: solid 5px #2f2c88;
   background-color: #feb464;
 }
 .lab-links {
