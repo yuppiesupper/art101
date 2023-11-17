@@ -6,16 +6,18 @@
    Author: Teia Ziegelman
    Date: 2023
 */
+
+//Function parameters
 function generateRandomText() {
     const text = "meow meow mow meow mrrp prrp mew meow meeeoow meow meowww mow mrrp mow meow meow mew mowwww meow";
     const min = 3;
     const max = 50;
     const randLen = Math.floor(Math.random() * (max - min + 1)) + min;
 
-    // Get a random starting index to slice the Lorem Ipsum text
+    // Get a random starting index to slice the text
     const randStart = Math.floor(Math.random() * (text.length - randLen + 1));
 
-    // Generate the random Lorem Ipsum-like text
+    // Generate the random text
     return text.slice(randStart, randStart + randLen);
   }
 
@@ -26,7 +28,7 @@ $("#make-convo").click(function(){
     // append a new div to our output div
     $("#output").append('<div class="text"><p>' + newText + '</p></div>');
   });
-  
+
 // reload when "Shut it!" button is clicked
   $("#refresh").click(function(){
     location.reload();
