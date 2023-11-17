@@ -1,0 +1,9 @@
+.text p {
+    display: inline-block;
+    max-width: 60%;
+    margin: 3px;
+    padding: 5px 10px;
+    background-color: rgb(191, 148, 185);
+    color: white;
+    font-family:monospace
+}
