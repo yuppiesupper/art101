@@ -14,7 +14,7 @@ function sortString(inputString) {
     return inputString.split('').sort().join('');
   } 
 
-  // click listener for button
+// click listener for button
 $("#submit").click(function(){ 
     const userName = $("#user-name").val();
     userNameSorted = sortString(userName); 
