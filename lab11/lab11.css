@@ -1,0 +1,13 @@
+#submit {
+    background-color: #aa6804;
+    color: white;
+    border-radius: 9px;
+    padding: 10px;
+    text-align: center;
+    font-size: 8px
+  }
+
+  input[type=text] {
+    padding: 10px;
+    border-radius: 9px;
+  }
