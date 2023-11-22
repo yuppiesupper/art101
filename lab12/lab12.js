@@ -23,5 +23,6 @@ $(document).ready(function() {
       var house = sortingHat(name);
       var newText = "<p>The Sorting Hat has sorted you into: " + house + "<p>";
       $("#output").html(newText);
+      $("#output").show(); 
     });
   });
