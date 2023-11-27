@@ -1,3 +1,7 @@
+/*
+   Author: Teia Ziegelman
+   Date: 2023
+*/
 function runFizzBuzz() {
   for (var index = 1; index <= 200; index++) {
       var str = "";
