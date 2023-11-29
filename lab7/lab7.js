@@ -2,25 +2,47 @@
 // Author: Teia Ziegelman
 // Date: 11/2/23
 
-// Constants
+function shuffleArray(array) {
+  // Split the array into uppercase and lowercase letters
+  var uppercaseLetters = array.filter(char => char === char.toUpperCase());
+  var lowercaseLetters = array.filter(char => char === char.toLowerCase());
 
-// Functions
+  // Shuffle each group of letters
+  uppercaseLetters = shuffleSubArray(uppercaseLetters);
+  lowercaseLetters = shuffleSubArray(lowercaseLetters);
 
-// sortName = takes user input and sorts letters
-function sortUserName() {
-  var userName = window.prompt("What's your name?");
-  console.log("userName =", userName);
-  //split string to array
-  var nameArray = userName.split('');
-  console.log("nameArray =", nameArray);
-  //sort the array
-  var sortNameArray = nameArray.sort();
-  console.log("sortNameArray =", sortNameArray);
-  //join array back to a string
-  var nameSorted = sortNameArray.join('');
-  console.log("nameSorted= ", nameSorted);
-  return nameSorted;
+  // Create a new array where each word starts with a capital letter
+  var resultArray = [];
+  var capitalIndex = 0;
+  for (var i = 0; i < lowercaseLetters.length; i++) {
+    if (lowercaseLetters[i] === ' ') {
+      resultArray.push(' '); // Preserve spaces
+    } else {
+      // If it's the first letter of a word, add a capital letter
+      if (capitalIndex < uppercaseLetters.length) {
+        resultArray.push(uppercaseLetters[capitalIndex++]);
+      }
+      resultArray.push(lowercaseLetters[i]);
+    }
+  }
+
+  return resultArray;
 }
-//output
-document.writeln("Here's your new and improved name!: ",
-    sortUserName(), "</br>");
+
+function shuffleSubArray(subArray) {
+  for (var i = subArray.length - 1; i > 0; i--) {
+    var j = Math.floor(Math.random() * (i + 1));
+    var temp = subArray[i];
+    subArray[i] = subArray[j];
+    subArray[j] = temp;
+  }
+  return subArray;
+}
+
+function generateAnagram() {
+  var userNameInput = document.getElementById("userName").value;
+  var nameArray = userNameInput.split('');
+  var shuffledNameArray = shuffleArray(nameArray);
+  var nameShuffled = shuffledNameArray.join('');
+  document.getElementById("output-container").innerHTML = "Here's your new and improved name!: " + nameShuffled;
+}

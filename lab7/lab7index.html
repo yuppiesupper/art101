@@ -37,7 +37,12 @@
 						<h2>Script Output</h2>
 						<script src="lab7.js"></script>
 					</div>
-					<div id="output"></div>
+ 				<form id="input-form">
+  			  	<label for="userName">Enter your name:</label>
+   				<input type="text" id="userName" name="userName" required>
+    			<button type="button" onclick="generateAnagram()">Generate Anagram</button>
+				<div id="output-container"></div>
+  </form>
 			</div>
 		</section>
 		<nav id="links">
