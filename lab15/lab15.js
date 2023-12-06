@@ -4,7 +4,7 @@
 */
 
 
-  // Wrap your AJAX code in a function
+  // Wrap AJAX code in a function
   function fetchData() {
     $.ajax({
       url: "https://yesno.wtf/api",
@@ -21,7 +21,7 @@
       // Append the answer
       $("#output").append(response.answer);
 
-      // If the API provides an image, append it as well
+      // append API image
       if (response.image) {
         var imageElement = $("<img>").attr("src", response.image);
         $("#output").append(imageElement);

@@ -1,0 +1,112 @@
+/* Reset some default styles for better consistency */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+ h1, h2, p, ul {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    color: #ddd;
+  }
+  @import url('https://fonts.googleapis.com/css2?family=Proxima+Nova:wght@400;700&display=swap');
+  body {
+    font-family: 'Proxima Nova', sans-serif;
+    background-color: #333333;
+    color: #fff; /* Lighter text color */
+  }
+  
+  /* Header styling */
+  header {
+    background-color: #1DB954; /* Spotify green */
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  header h1 {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  /* Navigation styling */
+  nav {
+    background-color: #333; /* Dark background color */
+  }
+  
+  nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+  }
+  
+  nav li {
+    margin: 0 10px;
+  }
+  
+  nav a {
+    color: #fff; /* Light text color */
+  }
+  
+  /* Main content styling */
+  main {
+    padding: 20px;
+  }
+
+  .modal-content {
+    background-color: #333333;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #1DB954; /* Spotify green border */
+    width: 80%;
+    border-radius: 20px;
+  }
+  
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #585757;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  /* Map section styling */
+  section {
+    text-align: center;
+  }
+  
+  #mapid {
+    height: 500px;
+    margin-top: 20px;
+    border: 1px solid #000000;
+    border-radius: 20px; /* Adjust the value for the desired level of roundness */
+  }
+  
+  /* Home section styling */
+  .home {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  /* Popup styling */
+  #popup {
+    display: none;
+    background-color: #333333;
+    padding: 20px;
+    border: 1px solid #000000;
+    text-align: center;
+    border-radius: 20px; /* Adjust the value for the desired level of roundness */
+  }
+  
+  /* Links styling */
+  a {
+    color: #1DB954;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }

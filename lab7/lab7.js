@@ -25,7 +25,6 @@ function shuffleArray(array) {
       resultArray.push(lowercaseLetters[i]);
     }
   }
-
   return resultArray;
 }
 
